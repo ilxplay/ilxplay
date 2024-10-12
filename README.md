@@ -2,6 +2,4 @@
 (This readme will be empty awhile)
 
 
-<a href="https://github.com/ilxplay/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=ilxplay&layout=compact&langs_count=8&card_width=320" />
-</a>
+ [![John's github stats](https://bad-apple-github-readme.vercel.app/api?username=lodhik9&show_icons=true&count_private=true&line_height=20&icon_color=00b3ff&theme=blue-green&title_color=00b3ff)](#)
