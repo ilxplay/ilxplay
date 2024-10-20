@@ -2,4 +2,4 @@
 (This readme will be empty awhile)
 
 
- [![Top languages](https://github-readme-mwendwa.vercel.app/api/top-langs/?username=ilxplay&layout=compact&count_private=true&theme=blue-green&title_color=00b3ff)](#)
+ [![Top languages](https://github-readme-mwendwa.vercel.app/api/top-langs/?username=ilxplay&layout=compact&count_&theme=blue-green&title_color=00b3ff)](#)
