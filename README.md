@@ -10,9 +10,7 @@
 </div>
 
 <!-- Dark Mode -->
-<div align="center"> 
-<a href="https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only">
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ilxplay&layout=compact&langs_count=12&hide_border=true&role=owner,collaborator&theme=dark&bg_color=000000#gh-dark-mode-only&count_private=true)
-</a>
 
-</div>
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=ilxplay&layout=compact&langs_count=12&hide_border=true&role=owner,collaborator&theme=dark&bg_color=000000#gh-dark-mode-only&count_private=true)
+
