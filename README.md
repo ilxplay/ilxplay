@@ -18,3 +18,7 @@
 </a>
 
 </div>
+
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&count_private=true&hide=html&theme=radical&langs_count=8&custom_title=My%20Top%20Languages&token=${{ secrets.GH_README_STATS_TOKEN }})
+
