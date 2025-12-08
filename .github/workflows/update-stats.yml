@@ -1,28 +1,28 @@
 name: Update GitHub Stats
-
 on:
   schedule:
     - cron: "0 0 * * *"  # Runs daily at midnight UTC
   workflow_dispatch:  # Allows manual triggering
-
 jobs:
   update-stats:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-
+      
       - name: Set Git User Identity
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
+      
       - name: Generate README Stats
-        env:
-          GH_TOKEN: ${{ secrets.GH_README_STATS_TOKEN }}
         run: |
-          curl -o github-stats.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=ilxplay&layout=compact&count_private=true&hide=html&theme=radical&langs_count=8&custom_title=My%20Top%20Languages&token=${{ secrets.GH_README_STATS_TOKEN }}&cache_seconds=180"
-          git add github-stats.svg
-          git commit -m "Update GitHub stats"
-          git push
+          # Try fetching with error handling
+          if curl -f -o github-stats.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=ilxplay&layout=compact&count_private=true&hide=html&theme=radical&langs_count=8&custom_title=My%20Top%20Languages"; then
+            git add github-stats.svg
+            git diff --staged --quiet || git commit -m "Update GitHub stats"
+            git push
+          else
+            echo "Failed to fetch stats, skipping commit"
+            exit 0
+          fi
