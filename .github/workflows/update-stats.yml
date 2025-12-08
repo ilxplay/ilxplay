@@ -16,9 +16,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
-      - name: Generate Streak Stats
+      - name: Generate Language Stats
         run: |
-          curl -f -o github-stats.svg "https://github-readme-streak-stats.herokuapp.com/?user=ilxplay&theme=radical&hide_border=true"
+          # Most used languages (compact)
+          curl -f -o github-stats.svg "https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ilxplay&theme=radical"
           
           if [ -f github-stats.svg ] && [ -s github-stats.svg ]; then
             git add github-stats.svg
